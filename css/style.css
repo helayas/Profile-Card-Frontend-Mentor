@@ -27,27 +27,30 @@ td, th {
 header {
     margin-top: -20px;
     text-align: center;
-    border-bottom: gray solid 1px;
+    border-bottom: rgb(248, 248, 248) solid 1px;
     padding-bottom: 20px;
 }
-
+    
 body {
     background: url(../images/bg-pattern-bottom.svg) bottom -800px right -350px no-repeat, url(../images/bg-pattern-top.svg) top -500px left -400px no-repeat;
     background-color: hsl(185, 75%, 39%);
     color: hsl(0, 0%, 59%);
     font-size: 13px;
     font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .card {
     box-sizing: border-box;
     background-color: white;
     width: clamp(320px, calc(50vh - 100px), 400px);
-    height: 400px;
+    height:320px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    margin-top: 5%;
     border-radius: 10px;
     flex-direction: column;
     align-content: center;
@@ -56,12 +59,14 @@ body {
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.45);
 }
 
-.top{
+.top {
+    display: flex;
     background-image: url(../images/bg-pattern-card.svg);
     background-size: cover;
-    height: 30%;
+    height: 35%;
     background-color: hsl(185, 75%, 39%);
-    border-radius: 10px 10px 0 0 ;
+    border-radius: 10px 10px 0 0;
+   
 }
 
 table {
@@ -77,10 +82,7 @@ table {
     margin: auto;
     border: 8px solid white;
     transform: translateY(-40%);
-
 }
-
-
 
 .xtf {
     width: 100%;
@@ -89,9 +91,18 @@ table {
     background-size: 50px;
 }
 
+.statsList{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.statsItem{
+    text-align: center;
+    width: 33%;
+}
 @media (max-width: 600px) {
     .card {
-    margin-top: 20%;
-    width: 80%;
+        margin-top: 20%;
+        width: 80%;
     }
 }
