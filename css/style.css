@@ -96,7 +96,7 @@ h3{
 }
 @media (max-width: 600px) {
     .card {
-    
         width: 60%;
+        height: 80%;
     }
 }
