@@ -49,8 +49,7 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.45);
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.45);
+
 }
 
 .top {
